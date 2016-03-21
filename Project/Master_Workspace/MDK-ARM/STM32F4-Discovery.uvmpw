@@ -41,6 +41,7 @@
 
   <project>
     <PathAndName>..\..\Peripheral_Examples\IO_Toggle\MDK-ARM\IO_Toggle.uvprojx</PathAndName>
+    <NodeIsActive>1</NodeIsActive>
     <NodeIsExpanded>1</NodeIsExpanded>
   </project>
 
@@ -86,7 +87,6 @@
 
   <project>
     <PathAndName>..\..\Peripheral_Examples\TIM_TimeBase\MDK-ARM\TIM_TimeBase.uvprojx</PathAndName>
-    <NodeIsActive>1</NodeIsActive>
     <NodeIsExpanded>1</NodeIsExpanded>
   </project>
 

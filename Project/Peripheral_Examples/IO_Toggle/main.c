@@ -21,6 +21,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4_discovery.h"
+#include "stm32f4xx_tim.h"
 
 /** @addtogroup STM32F4_Discovery_Peripheral_Examples
   * @{
@@ -42,10 +43,14 @@ void Delay(__IO uint32_t nCount);
 
 void Board_Init(void)
 {
-  /* GPIOD Periph clock enable */
+  TIM_TimeBaseInitTypeDef TimStruct;
+  
+  /* Periph clock enable */
   RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
   RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
 	
+  
   /* Configure PD12, PD13, PD14 and PD15 in output pushpull mode */
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_12 | GPIO_Pin_13| GPIO_Pin_14| GPIO_Pin_15;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
@@ -61,12 +66,57 @@ void Board_Init(void)
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;
   GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
   GPIO_Init(GPIOA, &GPIO_InitStructure);
-
+  
+  /* Timer 4*/
+  TimStruct.TIM_CounterMode = TIM_CounterMode_Up;
+  TimStruct.TIM_Period = 8400;
+  TimStruct.TIM_Prescaler = 0;
+  TimStruct.TIM_ClockDivision = 0;
+  TimStruct.TIM_RepetitionCounter = 0;
+  TIM_TimeBaseInit(TIM4, &TimStruct);
 }
 
 uint8_t Read_Button(void)
 {
   return GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0);
+}
+
+
+void PWM0_Init(void)
+{
+    GPIO_InitTypeDef GPIO_InitStructure;
+    TIM_TimeBaseInitTypeDef TIM_TimeBaseStructure;
+    TIM_OCInitTypeDef TIM_OCInitStructure;
+
+    /* TIM clock enable */
+    //RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
+    
+    /* Pulse pin configuration */
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_12;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;
+    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP ;
+    GPIO_Init(GPIOD, &GPIO_InitStructure); 
+    GPIO_PinAFConfig(GPIOD, GPIO_PinSource12, GPIO_AF_TIM4);
+    
+    /* TIM CH1 configuration */
+    TIM_TimeBaseStructure.TIM_Period = 8400;
+    TIM_TimeBaseStructure.TIM_Prescaler = 10-1;
+    TIM_TimeBaseStructure.TIM_ClockDivision = 0;
+    TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
+    TIM_TimeBaseInit(TIM4, &TIM_TimeBaseStructure);
+
+    TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM1;
+    TIM_OCInitStructure.TIM_OutputState = TIM_OutputState_Enable;
+    TIM_OCInitStructure.TIM_Pulse = 0;
+    TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;
+    TIM_OC1Init(TIM4, &TIM_OCInitStructure);
+    TIM_OC1PreloadConfig(TIM4, TIM_OCPreload_Enable);
+
+    
+    TIM_Cmd(TIM4, ENABLE);
+    TIM4->CCR1 = 2100;
 }
 
 /**
@@ -85,40 +135,16 @@ int main(void)
 
 	static uint8_t input;
 	Board_Init();
+  //PWM0_Init();
   
   while (1)
   {
-	  if (Read_Button() == 1)
-	  {
-		  GPIO_SetBits(GPIOD, GPIO_Pin_14);
-	  }
-	  else
-	  {
-		  GPIO_ResetBits(GPIOD, GPIO_Pin_14);
-	  }
-    
-//    /* PD13 to be toggled */
-//    GPIO_SetBits(GPIOD, GPIO_Pin_13);
-//    
-//    /* Insert delay */
-//    Delay(0x3FFFFF);
-//  
-//    /* PD14 to be toggled */
-//    GPIO_SetBits(GPIOD, GPIO_Pin_14);
-//    
-//    /* Insert delay */
-//    Delay(0x3FFFFF);
-//    
-//    /* PD15 to be toggled */
-//    GPIO_SetBits(GPIOD, GPIO_Pin_15);
-//    
-//    /* Insert delay */
-//    Delay(0x7FFFFF);
-//    
-//    GPIO_ResetBits(GPIOD, GPIO_Pin_12|GPIO_Pin_13|GPIO_Pin_14|GPIO_Pin_15);
-//    
-//    /* Insert delay */
-//    Delay(0xFFFFFF);
+    GPIO_ToggleBits(GPIOD, GPIO_Pin_14);
+    //Delay
+    TIM_Cmd(TIM4, ENABLE);
+    while (TIM_GetFlagStatus(TIM4, TIM_FLAG_Update) != SET);
+    TIM_ClearFlag(TIM4, TIM_FLAG_Update);
+    TIM_Cmd(TIM4, DISABLE);
   }
 }
 
