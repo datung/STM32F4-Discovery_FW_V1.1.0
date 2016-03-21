@@ -1,0 +1,15 @@
+--cpu Cortex-M4.fp
+".\io_toggle\system_stm32f4xx.o"
+".\io_toggle\main.o"
+".\io_toggle\stm32f4xx_it.o"
+".\io_toggle\stm32f4_discovery.o"
+".\io_toggle\stm32f4xx_rcc.o"
+".\io_toggle\misc.o"
+".\io_toggle\stm32f4xx_gpio.o"
+".\io_toggle\stm32f4xx_exti.o"
+".\io_toggle\stm32f4xx_syscfg.o"
+".\io_toggle\startup_stm32f4xx.o"
+--library_type=microlib --strict --scatter ".\IO_Toggle\IO_Toggle.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\IO_Toggle\IO_Toggle.map" -o .\IO_Toggle\IO_Toggle.axf

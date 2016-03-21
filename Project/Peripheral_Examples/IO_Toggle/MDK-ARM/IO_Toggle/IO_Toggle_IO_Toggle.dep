@@ -1,0 +1,320 @@
+Dependencies for Project 'IO_Toggle', Target 'IO_Toggle': (DO NOT MODIFY !)
+F (..\system_stm32f4xx.c)(0x4EAA2222)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery-I "E:\Tung\HCMUT\FEEE\DoA\Teaching\Embedded Control System (Spring 2016)\Projects\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER -DSTM32F4XX-o .\io_toggle\system_stm32f4xx.o --omf_browse .\io_toggle\system_stm32f4xx.crf --depend .\io_toggle\system_stm32f4xx.d)
+I (..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include\stm32f4xx.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cm4.h)(0x4EAA2206)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569DF84A)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x4EAA2206)
+I (..\stm32f4xx_conf.h)(0x4EAA2222)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x4EAA220A)
+F (..\main.c)(0x56E6AF6D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery-I "E:\Tung\HCMUT\FEEE\DoA\Teaching\Embedded Control System (Spring 2016)\Projects\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER -DSTM32F4XX-o .\io_toggle\main.o --omf_browse .\io_toggle\main.crf --depend .\io_toggle\main.d)
+I (..\..\..\..\Utilities\STM32F4-Discovery\stm32f4_discovery.h)(0x4EAA222E)
+I (..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include\stm32f4xx.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cm4.h)(0x4EAA2206)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569DF84A)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x4EAA2206)
+I (..\stm32f4xx_conf.h)(0x4EAA2222)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x4EAA220A)
+F (..\stm32f4xx_it.c)(0x4EAA2222)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery-I "E:\Tung\HCMUT\FEEE\DoA\Teaching\Embedded Control System (Spring 2016)\Projects\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER -DSTM32F4XX-o .\io_toggle\stm32f4xx_it.o --omf_browse .\io_toggle\stm32f4xx_it.crf --depend .\io_toggle\stm32f4xx_it.d)
+I (..\stm32f4xx_it.h)(0x4EAA2222)
+I (..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include\stm32f4xx.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cm4.h)(0x4EAA2206)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569DF84A)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x4EAA2206)
+I (..\stm32f4xx_conf.h)(0x4EAA2222)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x4EAA220A)
+F (..\..\..\..\Utilities\STM32F4-Discovery\stm32f4_discovery.c)(0x4EAA222E)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery-I "E:\Tung\HCMUT\FEEE\DoA\Teaching\Embedded Control System (Spring 2016)\Projects\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER -DSTM32F4XX-o .\io_toggle\stm32f4_discovery.o --omf_browse .\io_toggle\stm32f4_discovery.crf --depend .\io_toggle\stm32f4_discovery.d)
+I (..\..\..\..\Utilities\STM32F4-Discovery\stm32f4_discovery.h)(0x4EAA222E)
+I (..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include\stm32f4xx.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cm4.h)(0x4EAA2206)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569DF84A)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x4EAA2206)
+I (..\stm32f4xx_conf.h)(0x4EAA2222)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x4EAA220A)
+F (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c)(0x4EAA220A)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery-I "E:\Tung\HCMUT\FEEE\DoA\Teaching\Embedded Control System (Spring 2016)\Projects\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER -DSTM32F4XX-o .\io_toggle\stm32f4xx_rcc.o --omf_browse .\io_toggle\stm32f4xx_rcc.crf --depend .\io_toggle\stm32f4xx_rcc.d)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include\stm32f4xx.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cm4.h)(0x4EAA2206)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569DF84A)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x4EAA2206)
+I (..\stm32f4xx_conf.h)(0x4EAA2222)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x4EAA220A)
+F (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c)(0x4EAA220A)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery-I "E:\Tung\HCMUT\FEEE\DoA\Teaching\Embedded Control System (Spring 2016)\Projects\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER -DSTM32F4XX-o .\io_toggle\misc.o --omf_browse .\io_toggle\misc.crf --depend .\io_toggle\misc.d)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include\stm32f4xx.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cm4.h)(0x4EAA2206)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569DF84A)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x4EAA2206)
+I (..\stm32f4xx_conf.h)(0x4EAA2222)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x4EAA220A)
+F (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c)(0x4EAA220A)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery-I "E:\Tung\HCMUT\FEEE\DoA\Teaching\Embedded Control System (Spring 2016)\Projects\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER -DSTM32F4XX-o .\io_toggle\stm32f4xx_gpio.o --omf_browse .\io_toggle\stm32f4xx_gpio.crf --depend .\io_toggle\stm32f4xx_gpio.d)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include\stm32f4xx.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cm4.h)(0x4EAA2206)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569DF84A)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x4EAA2206)
+I (..\stm32f4xx_conf.h)(0x4EAA2222)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x4EAA220A)
+F (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_exti.c)(0x4EAA220A)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery-I "E:\Tung\HCMUT\FEEE\DoA\Teaching\Embedded Control System (Spring 2016)\Projects\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER -DSTM32F4XX-o .\io_toggle\stm32f4xx_exti.o --omf_browse .\io_toggle\stm32f4xx_exti.crf --depend .\io_toggle\stm32f4xx_exti.d)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include\stm32f4xx.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cm4.h)(0x4EAA2206)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569DF84A)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x4EAA2206)
+I (..\stm32f4xx_conf.h)(0x4EAA2222)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x4EAA220A)
+F (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_syscfg.c)(0x4EAA220A)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\ -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\STM32F4-Discovery-I "E:\Tung\HCMUT\FEEE\DoA\Teaching\Embedded Control System (Spring 2016)\Projects\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER -DSTM32F4XX-o .\io_toggle\stm32f4xx_syscfg.o --omf_browse .\io_toggle\stm32f4xx_syscfg.crf --depend .\io_toggle\stm32f4xx_syscfg.d)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include\stm32f4xx.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cm4.h)(0x4EAA2206)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x569DF84A)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x4EAA2206)
+I (..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x4EAA2206)
+I (..\stm32f4xx_conf.h)(0x4EAA2222)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x4EAA220A)
+F (..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Source\Templates\arm\startup_stm32f4xx.s)(0x4EAA2206)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I "E:\Tung\HCMUT\FEEE\DoA\Teaching\Embedded Control System (Spring 2016)\Projects\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 518" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1"--list .\io_toggle\startup_stm32f4xx.lst --xref -o .\io_toggle\startup_stm32f4xx.o --depend .\io_toggle\startup_stm32f4xx.d)
