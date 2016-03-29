@@ -390,6 +390,11 @@
               <FileType>1</FileType>
               <FilePath>..\stm32f4xx_it.c</FilePath>
             </File>
+            <File>
+              <FileName>user.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

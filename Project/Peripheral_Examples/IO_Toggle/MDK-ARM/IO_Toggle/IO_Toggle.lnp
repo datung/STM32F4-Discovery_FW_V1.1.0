@@ -2,6 +2,7 @@
 ".\io_toggle\system_stm32f4xx.o"
 ".\io_toggle\main.o"
 ".\io_toggle\stm32f4xx_it.o"
+".\io_toggle\user.o"
 ".\io_toggle\stm32f4_discovery.o"
 ".\io_toggle\stm32f4xx_rcc.o"
 ".\io_toggle\misc.o"

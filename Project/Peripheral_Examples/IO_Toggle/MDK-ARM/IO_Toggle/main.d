@@ -1,4 +1,5 @@
 .\io_toggle\main.o: ..\main.c
+.\io_toggle\main.o: ..\user.h
 .\io_toggle\main.o: ..\..\..\..\Utilities\STM32F4-Discovery\stm32f4_discovery.h
 .\io_toggle\main.o: ..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include\stm32f4xx.h
 .\io_toggle\main.o: ..\..\..\..\Libraries\CMSIS\Include\core_cm4.h
