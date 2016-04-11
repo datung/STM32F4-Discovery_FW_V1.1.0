@@ -207,27 +207,32 @@
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
-          <ItemText>GPIO_InitStructure</ItemText>
+          <ItemText>Enable</ItemText>
         </Ww>
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>input</ItemText>
+          <ItemText>Kp</ItemText>
         </Ww>
         <Ww>
           <count>2</count>
           <WinNumber>1</WinNumber>
-          <ItemText>pulse,0x0A</ItemText>
+          <ItemText>Ki</ItemText>
         </Ww>
         <Ww>
           <count>3</count>
           <WinNumber>1</WinNumber>
-          <ItemText>Speed</ItemText>
+          <ItemText>Kd</ItemText>
         </Ww>
         <Ww>
           <count>4</count>
           <WinNumber>1</WinNumber>
-          <ItemText>Enable</ItemText>
+          <ItemText>sp_val</ItemText>
+        </Ww>
+        <Ww>
+          <count>5</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>cur_val</ItemText>
         </Ww>
       </WatchWindow1>
       <MemoryWindow1>

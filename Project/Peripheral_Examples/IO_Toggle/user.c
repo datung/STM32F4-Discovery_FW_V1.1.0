@@ -1,5 +1,15 @@
 #include "user.h"
 
+//float Kp = 0.7, Ki = 10, Kd;
+//BOOL ctrl_en = TRUE;
+//float sp_val = 600;
+//float cur_val;
+
+float Kp = 0.1, Ki = 0, Kd;
+BOOL ctrl_en = TRUE;
+float sp_val = 360;
+float cur_val;
+
 void CLK_Init(void)
 {
     /* Periph clock enable */
@@ -184,4 +194,125 @@ BOOL BUT_IsPress(BOOL debounce)
         }
     }
     return res;
+}
+
+void PID_Speed_Ctrl(void)
+{
+   
+    // PID PARAMETERS
+    static float u = 0;
+    static float e_0 = 0, e_1 = 0;
+    static float Ppart = 0, Ipart = 0, Dpart = 0;
+    static float DT = 0.005; //5ms
+
+    static float speed = 0;
+    static int32_t p_0 = 0, p_1 = 0;
+    float dp;
+
+    // Get speed
+    p_0 = ENC_Get();
+    dp = (float)(p_0 - p_1);
+    if (dp > DELTA_PULSE_THRES)
+        dp -= 65536;
+    else if (dp < (-DELTA_PULSE_THRES))
+        dp += 65536;
+    speed = (dp * 7.5f); //rpm
+    p_1 = p_0;
+
+
+    /* @PID state: 
+     */
+    if (ctrl_en)
+    {
+        // PID control
+        cur_val = speed;
+        e_0 = (sp_val - cur_val);
+        Ppart = Kp * e_0;
+        Ipart += Ki * DT * (e_0 + e_1) / 2; // integration approximation
+        Dpart = Kd * (e_0 - e_1) / DT;
+        u = Ppart + Ipart + Dpart;
+        e_1 = e_0;
+
+        // PWM saturation
+        if (u > PWM_OUT_MAX) u = PWM_OUT_MAX;
+        else if (u < PWM_OUT_MIN) u = PWM_OUT_MIN;
+    }
+    else
+    {
+        // Stop period
+        Ppart = 0;
+        Ipart = 0;
+        Dpart = 0;
+        e_1 = 0;
+        u = 0;
+    }
+    
+    // PWM output
+    PWM_Set((int16_t)u);
+}
+
+
+void PID_Pos_Ctrl(void)
+{
+    // PID PARAMETERS
+    static float u = 0;
+    static float e_0 = 0, e_1 = 0;
+    static float Ppart = 0, Ipart = 0, Dpart = 0;
+    static float DT = 0.005; //5ms
+
+    static float pos = 0;
+    static int32_t p_0 = 0, p_1 = 0;
+    float dp;
+
+    // Get speed
+    p_0 = ENC_Get();
+    dp = (float)(p_0 - p_1);
+    if (dp > DELTA_PULSE_THRES)
+        dp -= 65536;
+    else if (dp < (-DELTA_PULSE_THRES))
+        dp += 65536;
+    pos += (dp / 1600 * 360); //deg: *1600/360
+    p_1 = p_0;
+
+
+    /* @PID state: 
+     */
+    if (ctrl_en)
+    {
+        // PID control
+        cur_val = pos;
+        e_0 = (sp_val - cur_val);
+        Ppart = Kp * e_0;
+        Ipart += Ki * DT * (e_0 + e_1) / 2; // integration approximation
+        Dpart = Kd * (e_0 - e_1) / DT;
+        u = Ppart + Ipart + Dpart;
+        e_1 = e_0;
+
+        // PWM saturation
+        if (u > PWM_OUT_MAX) u = PWM_OUT_MAX;
+        else if (u < PWM_OUT_MIN) u = PWM_OUT_MIN;
+    }
+    else
+    {
+        // Stop period
+        Ppart = 0;
+        Ipart = 0;
+        Dpart = 0;
+        e_1 = 0;
+        u = 0;
+        
+        pos = 0;
+    }
+    
+    // PWM output
+    PWM_Set((int16_t)u);
+}
+
+void PID_Start(void)
+{
+    ctrl_en = TRUE;
+}
+void PID_Stop(void)
+{
+    ctrl_en = FALSE;
 }

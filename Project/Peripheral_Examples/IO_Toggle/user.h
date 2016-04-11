@@ -41,6 +41,17 @@
 #define ENC_CAP_TIMEOUT      100   
 #define CAPTURE_MAX_VAL       65535
 
+/* PUMP PARAMS */
+#define PUMP_SPEED_MIN     (int16_t)50   // Max set speed (rpm)
+#define PUMP_SPEED_STOP    (int16_t)100  // Min speed can stop motor at once
+#define PUMP_SPEED_MAX     (int16_t)1000 // Min set speed (rpm)
+#define PUMP_SPEED_GEAR    5
+// #define PULSE_PER_REV      (uint16_t)1600
+#define DELTA_PULSE_THRES  (uint16_t)10000
+#define PULSE_TO_RPM       (real32_t)7.5       //60 * 200 / (PULSE_PER_REV)
+#define PWM_OUT_MAX        400
+#define PWM_OUT_MIN        -400
+
 typedef enum
 {
     FALSE = (uint8_t)0,
@@ -57,6 +68,9 @@ int32_t ENC_Get(void);
 void PWM_Set(int16_t d);
 void DelayTms(uint32_t T);
 BOOL BUT_IsPress(BOOL debounce);
-
+void PID_Speed_Ctrl(void);
+void PID_Pos_Ctrl(void);
+void PID_Start(void);
+void PID_Stop(void);
 #endif
 
